@@ -1,0 +1,22 @@
+#!/bin/bash
+# Release Test
+# Run as sudo
+
+echo "Make sure Ubuntu is current--------------"
+apt-get -y update
+apt-get -y upgrade
+
+echo "Configure firewall-----------------------"
+ufw allow OpenSSH
+ufw --force enable
+
+echo "Create New User--------------------------"
+echo "adduser <name>"
+echo "usermod -aG sudo <name>"
+echo "log in as <name>"
+echo "test by issuing sudo command...  sudo <command>"
+
+echo "Install Nginx---------------------------"
+apt install nginx
+ufw allow 'Nginx HTTP'
+echo "test Nginx by navigating to the server in a browser to see the default page"
