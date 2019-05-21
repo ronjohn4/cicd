@@ -1,6 +1,8 @@
 #!/bin/bash
 # Release Test
-# Run as sudo
+#
+# Change permissions on this script =>chmod 755 server_init
+# Run as sudo =>sudo ./server_init
 
 echo "Make sure Ubuntu is current--------------"
 apt-get -y update
