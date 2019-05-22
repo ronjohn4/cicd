@@ -1,6 +1,6 @@
 #!/bin/bash
 # Release Test
-#
+# 2
 # Change permissions on this script =>chmod 755 server_init
 # Run as sudo =>sudo ./server_init
 
